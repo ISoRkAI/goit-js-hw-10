@@ -32,16 +32,16 @@ function onInputSearch(e) {
 }
 
 function onFetchSuccess(e) {
-    clearCountryInfo();
-    clearCountryList();
+    // clearCountryInfo();
+    // clearCountryList();
     if (e.length >= 2 && e.length <= 10) {
         markupList(e);
-        clearCountryInfo();
+        // clearCountryInfo();
     return;
   }
   if (e.length < 2) {
     markupInfo(e);
-    clearCountryList();
+    // clearCountryList();
     return;
   }
   if (e.length > 10) {
